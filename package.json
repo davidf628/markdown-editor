@@ -1,0 +1,36 @@
+{
+  "name": "electron-markdown-editor",
+  "version": "1.0.0",
+  "description": "Markdown Editor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "debug": "DEBUG=true electron-forge start",
+    "build:macos": "electron-builder --macos --dir",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "compile": "npx babel ./es6/actions.js --out-file actions.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@electron-forge/cli": "^6.0.5",
+    "@electron-forge/maker-deb": "^6.0.5",
+    "@electron-forge/maker-rpm": "^6.0.5",
+    "@electron-forge/maker-squirrel": "^6.0.5",
+    "@electron-forge/maker-zip": "^6.0.5",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "electron": "^23.2.0",
+    "electron-forge": "^5.2.4"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "simplemde": "^1.11.2"
+  }
+}
